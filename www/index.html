@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>grepdle</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔤</text></svg>">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>grepdle</h1>
+    <p>Yet another <a href="https://www.powerlanguage.co.uk/wordle/">Wordle</a> clone,
+    now made to be easily grepped.</p>
+    <p>Word list is <code>grep -E '^[a-z]{5}$' /usr/share/dict/words</code></p>
+    <div id="game">
+      <span id="msg"></span>
+      <div id="grid"></div>
+      <p>Refresh or <a href=".">click here</a> for a new game.</p>
+      <div id="kb"></div>
+    </div>
+    <footer id="footer">
+      &copy; 2022 Thomas Faughnan |
+      <a href="https://github.com/tfaughnan/grepdle">Source Code</a>
+    </footer>
+    <script type="text/javascript" src="grepdle.js"></script>
+  </body>
+</html>
+<!-- vim: set noet sw=2 sts=2: -->
